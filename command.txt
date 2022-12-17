@@ -1,0 +1,117 @@
+A): First install composer and go composer site and click download link, compy first link and past cmd hit enter:
+(php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+); this command install installer;
+
+B): and copy second link and past cmd and hit enter, link below,
+(php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+); this command veryfhy log in composer;
+
+C):for use setting composer; (php composer-setup.php
+);
+and chek composer type command in cmd: composer and enter hit;
+
+D): we are use laravel installer command for installed laravel : (composer global require laravel/installer
+);
+Check if laravel installer installed or not use command:(laravel)
+
+E): use this command installed for laravel project: (laravel new blog); 
+
+X.=>) for laravel ui packge: (composer require laravel/ui);
+Y.=>)next this run command for laravel ui auth: (php artisan ui:auth);
+Z.=>)for bootstrap design this command: (php artisan ui bootstrap);
+zz.=>)for bootstrap ui packge: (npm install && npm run dev);
+
+1. Controller Create : php artisan make:controller Backend/Controllername
+2. Command for model : php artisan make:model backend/Admin
+2. Create migration for create table : php artisan make:migration tablname --create=tblname
+3. then create table in database : php artisan migrate
+
+### for unique slug command (composer require cviebrock/eloquent-sluggable).
+
+///Npm Path in c 
+C:\Program Files\nodejs\
+//end npm path
+
+4. add new aloumn in table : php artisan make:migration add-phone-number
+
+(this is the demo :  Schema::table('articles', function (Blueprint $table) {
+            $table->string('author')->after('description');)
+ : Then use commend => php artisan migrate
+
+5. for the change coloumn datatype :  Schema::table('restaurants', function (Blueprint $table) {
+            $table->string('email')->change();
+
+6. for delete column from table : php artisan migrate:rollback 
+7. use command for mysql datatype : composer require doctrine/dbal
+8. use for create content for inserting table : php artisan make:seeder AdminTableSeeder
+9. this command insert data in table use seeder : php artisan db:seed
+10. make middleware for login registration check if login or not : php artisan make:middleware CustomAuth
+(when create custom auth is defined in kernal.php file in middlewareGroup in last row, this will be auto call by custom auth)
+11. use for custom validation rule : php artisan make:request AddProduct
+
+ <------Start Php function------>
+
+      DB::enableQueryLog(); // Enable query log
+        run query here
+       dd(DB::getQueryLog());
+
+
+      if($Tender->count()) {
+         	Count for protect error in laravel
+      }
+
+
+ <------End Function ----------> 
+
+  <!--Start For Contact Form -->
+  php artisan make:mail ContactFormMail --markdown=emails.frontend.contact-form
+  this command will be created mail function and view and he is use for sending mail
+  <!--End contact form -->
+
+    <!--lat inserted id -->
+    $id = DB::getPdo()->lastInsertId();
+    <!-- last inserted id -->
+
+php artisan config:cache
+php artisan config:clear
+php artisan route:cache
+php artisan route:clear
+
+Restore file command
+composer dump-autoload -o
+End Restore Command File
+
+
+        // $result = Level::with('userinfo')->setQuery();
+        // if (!empty($UserMobile)) {
+        //     $result = $result->where('mobile_number', $UserMobile);
+        // }
+        //  $result = $result->get();
+
+            // $result = Level::whereHas('userinfo', function($query) {
+    //  if (!empty($UserMobile)) {
+    // $query->where('mobile_number', $UserMobile);
+    //   }
+    // })->get(); 
+
+  // Start Schedule Command For Automatically Send Mail
+  First run this command for creating command => php artisan make:command cronEmail. This Calss create on command folder and register this command in kernal file, the kernal file in in console folder..
+  after configuritation run this command => php artisan schedule:run and your command run automatically in localhost this is run one time but local server this is run according your configuration.
+  // End Schedule Command For Automatically Send Mail
+
+  <php 1. login 
+show name and submit database
+
+
+            <div class="tab">
+                        <h3 class="text-left" id=""><span><b>Enter mobile no</b></span></h3>
+                        2. mobile is register - password
+
+// Start when uploading live server remove some file from your project
+1.) artisan
+2.) composer.json
+3.) package.json
+4.) readme.md
+5.) server.php
+6.) webpack.mix.js
+// End when uploading live server remove some file from your project
